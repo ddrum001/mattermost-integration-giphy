@@ -33,7 +33,7 @@ Here's how to start:
     - `export MATTERMOST_GIPHY_HOST=<your-host>` or `export HOST=<your-host>` The host you want the integration (defaults to 0.0.0.0)
     - `export MATTERMOST_GIPHY_PORT=<your-port-number>` or `export PORT=<you-port-number>` The port number you want the integration to listen on (defaults to 5000)
  2. Source your bash profile
-    - `source ~/.bash_profile`
+    - `source ~/.profile`
  3. Run the server
     - `python run.py`
 
@@ -44,9 +44,9 @@ That's it! You should be able to type `gif: hello` or `/gif hello` into any chan
 If you'd like to use this integration in a production envrionment, it is strongly recommended that you get a production Giphy API key from [here](http://api.giphy.com/submit). Once you have that you can configure the integration to use it:
 
 1. Stop the process currently running the integration
-1. Add the following lines to your `~/.bash_profile` or `~/.bashrc` 
+1. Add the following lines to your `~/.profile` or `~/.bashrc` 
    - `export GIPHY_API_KEY=<your-api-key-here>` With your Giphy API key
 2. Source your bash profile
-   - `source ~/.bash_profile` or `source ~/.bashrc`
+   - `source ~/.profile` or `source ~/.bashrc`
 3. Run the server again
    - `python run.py`
